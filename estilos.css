@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+.row{
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     text-align: center;
+     height: 100vh;
+    
+    
+} 
+
+
+.card {   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 76px 10px;
+    border-radius: 20px;
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+img{
+    max-width: 50%;  
+}
+
+.card input{
+    height: 30%;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    border: solid 1px gainsboro;
+    color: rgb(90, 88, 88);
+   
+    
+}
+
+input:focus{
+  outline: none;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(212,57,181,1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(212,57,181,1);
+  box-shadow: 0px 0px 12px 1px rgba(212,57,181,1);
+  
+  
+  border-color: blueviolet;
+}
+
+.card .btn{
+   padding: 10px;
+   color: white;
+   background-color: rgba(143, 11, 148, 0.89);
+   outline: none;
+   border: none;
+   width: 42%;
+   border-radius: 20px;
+}
+
+.btn:hover{
+  background-color: rgba(84, 19, 87, 0.89); ;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
